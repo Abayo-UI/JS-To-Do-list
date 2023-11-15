@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title> DOM Manipulaton project 4; STOP WATCH </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <!--Link to bootstrap icons-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+        <!--Link to bootstrap's website-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+        <!--link to google fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,300&display=swap" rel="stylesheet">
+        <style>
+         @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css");
+          body{
+            background-image: url(coffee.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            height: 100vh;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+          }
+           
+        #add-task-container{
+            width: 350px;
+            padding: 0.8rem 0.5rem;
+            background-color: #fff;
+            display: flex;
+            height: auto;
+            margin-bottom: 1rem;
+        } 
+
+        input{
+            flex: 5;
+            margin-right:0.5rem ;
+            font-size: 1.3rem;
+        }
+        
+        #add-task{
+            flex: 1;
+            transition: .3s;
+            font-size: 1rem;
+            background-color: #fff;
+            color: green;
+            border: 0.1rem solid green;
+        }
+
+        #add-task:hover{
+            background-color: green;
+            color: #fff;
+        }
+
+        /*further styling for the to do list*/
+
+        .task{
+            width:100%;
+            background-color: #fff;
+            border-radius: 0.5rem;
+            padding: 0.1rem;
+            margin-bottom: 0.8rem;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .task li{
+            list-style: none;
+            flex: 5;
+            padding: 0.5rem;
+            font-size: 1.3rem;
+        }
+
+        .task button{
+            background-color: #fff;
+            flex: 1;
+            border-radius: 0.8rem;
+            cursor: pointer;
+        }
+
+        .task .checktask{
+            color: orange;
+            margin-right: 0.3rem;
+            border: 0.1rem solid orange;
+            font-size: 1.5rem;
+        }
+
+        .task .checktask:hover{
+            color: #fff;
+            background-color: orange;
+        }
+
+        .task .deletetask{
+            color: red;
+            border: 0.1rem solid red;
+            font-size: 1.3rem;
+        }
+
+        .task .deletetask:hover{
+           color: #fff;
+           background-color: red;
+        }
+
+
+        </style>
+    </head>
+    <body> 
+
+        <div class="kontainer">
+
+            <div id="add-task-container" class="rounded-3">
+                <input type="text" placeholder="Enter task" id="input-task" class="rounded-2">
+                <button id="add-task" class="rounded-2"><i class="bi bi-plus"></i></button>
+            </div>
+
+            <div id="task-container"></div>
+        </div>
+
+        <!--SCRIPTS-->
+
+        <script src="project5.js"></script>
+    </body>
+    </html>
+    </html>       
